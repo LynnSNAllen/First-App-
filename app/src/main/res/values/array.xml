@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="RegionCode">
+    <item>+95</item>
+    <item>+75</item>
+    <item>+85</item>
+    <item>+65</item>
+</string-array>
+    
+</resources>

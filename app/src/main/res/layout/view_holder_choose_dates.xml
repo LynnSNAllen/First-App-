@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="180dp"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/DateOne"
+        android:layout_width="300dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="-100dp"
+        app:srcCompat="@drawable/dateshownpartone"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/DateTwo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-160dp"
+        android:layout_below="@id/DateOne"
+        app:srcCompat="@drawable/dateshownparttwo"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/BlackBar"
+        android:layout_width="35dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/blackbar"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:elevation="@dimen/margin_xxlarge"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BlackBar"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:text="Today"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFebMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvToday"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_horizontal"
+        android:text="Feb"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFebMonth"
+        android:gravity="center_horizontal"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"/>
+</RelativeLayout>

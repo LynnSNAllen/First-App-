@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_banner_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/kfcfriedchicken" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:elevation="@dimen/margin_medium_3"
+        android:text="@string/lbl_10_off"
+        android:textColor="@color/colorTirtaryText"
+        android:textSize="@dimen/margin_xlarge"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvATMcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPercentage"
+        android:layout_alignStart="@id/tvPercentage"
+        android:elevation="@dimen/margin_medium_3"
+        android:text="@string/lbl_with_debit_card"
+        android:textSize="@dimen/margin_medium_2"
+        android:textColor="@color/colorTirtaryText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvKBZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPercentage"
+        android:layout_marginStart="@dimen/margin_card_medium"
+        android:layout_marginTop="@dimen/margin_small_n"
+        android:layout_toEndOf="@id/tvATMcard"
+        android:elevation="@dimen/margin_medium_3"
+        android:text="KBZ"
+        android:textColor="@color/colorTirtaryText"
+        android:textSize="@dimen/margin_medium_3"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDebitCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPercentage"
+        android:layout_toEndOf="@id/tvKBZ"
+        android:elevation="@dimen/margin_medium_3"
+        android:layout_marginStart="@dimen/margin_card_medium"
+        android:text="debit card"
+        android:textSize="@dimen/margin_medium_2"
+        android:textColor="@color/colorTirtaryText"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:elevation="@dimen/margin_medium_3"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/creditcard" />
+
+    <View
+        android:id="@+id/vGradientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_banner"/>
+
+
+</RelativeLayout>

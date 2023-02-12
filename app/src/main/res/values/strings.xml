@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Get Your Tickets</string>
+
+    <string name="c">C</string>
+    <string name="lbl_verify">We will send 6-digit sms code \n to verify your phone number</string>
+    <string name="lbl_verificationPhoneNumber">Verify Your Phone Number</string>
+    <string name="lbl_continue_with_google">Continue with Google</string>
+    <string name="lbl_loginpolicy"><![CDATA[By clicking, I accept the Terms & Conditions & Privacy Plolicy]]></string>
+    <string name="lbl_optcode">We’ve sent OTP Code</string>
+    <string name="lbl_optDescription">Please enter 6-digit OTP code \nthat sent to your phone number.</string>
+    <string name="lbl_enteropt">Enter OTP Code</string>
+    <string name="lbl_notreceivedcode">Don’t receive OTP?</string>
+    <string name="lbl_resend_code">Resend Code</string>
+    <string name="lbl_yangon">Yangon</string>
+    <string name="lbl_movie_name_blackwidow">Black Widow</string>
+    <string name="lbl_pick_region">Pick Region</string>
+    <string name="lbl_search_your_location">Search your location</string>
+    <string name="lbl_10_off">10% off</string>
+    <string name="lbl_with_debit_card">with</string>
+    <string name="lbl_now_showing">Now Showing</string>
+    <string name="lbl_coming_soon">Coming Soon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_play_trailer">play trailer</string>
+    <string name="lbl_chip_action">Action</string>
+    <string name="lbl_2d_3d_3d_imax_3d_dbox">2D, 3D, 3D IMAX, 3D DBOX</string>
+    <string name="lbl_movie_detail__name">Black Widow</string>
+    <string name="lbl_chip_adventure">Adventure</string>
+    <string name="lbl_chip_drama">Drama</string>
+    <string name="lbl_chip_sci_fi">Sci-Fi</string>
+    <string name="lbl_release_date">Release date</string>
+    <string name="lbl_censor_rating">Censor Rating</string>
+    <string name="lbl_duration">Duration</string>
+    <string name="lbl_2hr_15min">2hr 15min</string>
+    <string name="lbl_movie_description">Black Widow is a 2021 superhero film, based on the Marvel Comics superhero of the same name. The film is a sequel to Captain America: Civil War and a prequel to Avengers: Infinity War. It is the twenty-fourth film in the Marvel Cinematic Universe, and the fourth installment of Phase Four. The film was released on July 9, 2021 in theaters and on Disney+ with Premier Access.Black Widow is a 2021 superhero film, based on the Marvel Comics superhero of the same name. The film is a sequel to Captain America: Civil War and a prequel to Avengers: Infinity War. It is the twenty-fourth film in the Marvel Cinematic Universe, and the fourth installment of Phase Four. The film was released on July 9, 2021 in theaters and on Disney+ with Premier Access.\nIn Marvel Studios\s  action-packed spy thriller Black Widow, Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.</string>
+    <string name="lbl_actress_name">Scarlett\nJohansson</string>
+    <string name="lbl_premiering_date">Releasing in 5 days</string>
+    <string name="lbl_notify">Get notify as soon as movie\nbooking opens up in your city!</string>
+    <string name="lbl_available">Available</string>
+    <string name="lbl_filling_fast">Filling Fast</string>
+    <string name="lbl_almost_full">Almost Full</string>
+    <string name="lbl_cities">Cities</string>
+    <string name="lbl_yangon_city">Yangon</string>
+    <string name="lbl_mandalay_city">Mandalay</string>
+    <string name="lbl_naypyidaw_city">Naypyidaw</string>
+    <string name="lbl_bago_city">Bago</string>
+    <string name="lbl_jcgv_junction_city">JCGV : Junction City</string>
+    <string name="lbl_see_details"><u>See Details</u></string>
+    <string name="lbl_parking">Parking</string>
+    <string name="lbl_9_30_am">9:30 AM</string>
+    <string name="lbl_3d">3D</string>
+    <string name="lbl_screen_1">Screen 1</string>
+    <string name="lbl_21_available">21 Available</string>
+
+</resources>

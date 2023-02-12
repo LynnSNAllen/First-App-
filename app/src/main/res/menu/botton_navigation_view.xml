@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/movies"
+        android:id="@+id/actionMovies"
+        app:showAsAction="never"
+        android:title="Movies"/>
+    <item
+        android:icon="@drawable/cinema"
+        android:id="@+id/actionCinema"
+        app:showAsAction="never"
+        android:title="Cinema"/>
+    <item
+        android:icon="@drawable/ticket"
+        android:id="@+id/actionTicket"
+        android:title="Ticket"/>
+
+    <item
+        android:icon="@drawable/user"
+        android:id="@+id/actionProfile"
+        android:title="Profile"/>
+</menu>

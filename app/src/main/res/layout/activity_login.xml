@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="..acitivities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xlarge">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/clogo" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/filmlogo" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="Verify Your Phone Number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_4x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDigitDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvVerify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/lbl_verify"
+            android:textColor="@color/colorsecondarytext" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCountrycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDigitDescription"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="Country Code"
+            android:textColor="@color/colorsecondarytext"
+            android:textSize="@dimen/text_small" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCountrycode"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:popupBackground="@color/black"
+                android:backgroundTintMode="@color/white"
+                android:layout_weight="0.3"
+                android:theme="@style/spinnerItemStyle"
+                android:entries="@array/RegionCode" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_weight="0.7"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:hint="Mobile Number"
+                android:paddingBottom="@dimen/margin_card_medium_2"
+                android:textColorHint="@color/colorsecondarytext" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <RelativeLayout
+            android:id="@+id/btnVerifyPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:layout_below="@id/llPhoneNumber"
+            android:layout_marginHorizontal="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@drawable/background_btn_phone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/lbl_verificationPhoneNumber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flFirstpart"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnVerifyPhoneNo"
+            android:layout_alignStart="@id/btnVerifyPhoneNo"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/flFirstpart"
+            android:layout_marginHorizontal="@dimen/margin_medium_3"
+            android:layout_toEndOf="@id/flFirstpart"
+            android:text="or"
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:id="@+id/flSecpart"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_alignBottom="@id/flFirstpart"
+            android:layout_toEndOf="@id/tvOr"
+            android:background="@color/colorPrimary"/>
+
+        <RelativeLayout
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/flSecpart"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_medium_3"
+            android:background="@drawable/background_btn_google">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_centerInParent="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/widthgoogle"
+                    android:layout_height="@dimen/heightgoogle"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:src="@drawable/googlelogo"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_continue_with_google"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnGoogle"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="@string/lbl_loginpolicy"
+            android:textColor="@color/colorsecondarytext"
+            android:textSize="@dimen/text_regular"/>
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

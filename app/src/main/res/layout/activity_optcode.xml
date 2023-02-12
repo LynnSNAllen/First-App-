@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="..acitivities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/margin_xlarge"
+            android:layout_height="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:elevation="@dimen/margin_medium">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/backbtn" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLogoOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xlarge">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_xxlarge"
+                android:src="@drawable/clogo" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/filmlogo" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlLogoOtp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="@string/lbl_optcode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_4x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOptDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvVerify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:text="@string/lbl_optDescription"
+            android:textColor="@color/colorsecondarytext" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOtpcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOptDescription"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="@string/lbl_enteropt"
+            android:textColor="@color/colorsecondarytext"
+            android:textSize="@dimen/text_small" />
+
+        <LinearLayout
+            android:id="@+id/llOtpCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOtpcode"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:orientation="horizontal"
+            android:weightSum="0.6">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpCode6"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_weight="0.1"
+                android:background="@drawable/background_otpcode"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@color/colorsecondarytext"
+                android:textSize="@dimen/margin_medium_2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvResendOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llOtpCode"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotReceiveCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/lbl_notreceivedcode"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvResendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_toEndOf="@id/tvNotReceiveCode"
+                android:text="@string/lbl_resend_code"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_regular_2x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnComfirmOtp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:layout_below="@id/rlvResendOtp"
+            android:layout_marginHorizontal="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@drawable/background_btn_phone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Comfirm OTP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="normal"/>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnComfirmOtp"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/text_big_2x"
+            android:text="@string/lbl_loginpolicy"
+            android:textColor="@color/colorsecondarytext"
+            android:textSize="@dimen/text_regular"/>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

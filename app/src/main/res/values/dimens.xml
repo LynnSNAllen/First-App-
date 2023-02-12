@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_card_medium">6dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_card_medium_2">12dp</dimen>
+    <dimen name="margin_medium_3">20dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+
+    <dimen name="margin_small_n">-4dp</dimen>
+    <dimen name="margin_card_medium_n">-6dp</dimen>
+    <dimen name="margin_medium_n">-8dp</dimen>
+    <dimen name="margin_card_medium_2_n">-12dp</dimen>
+    <dimen name="margin_medium_2_n">-16dp</dimen>
+    <dimen name="margin_medium_3_n">-18dp</dimen>
+    <dimen name="margin_large_n">-24dp</dimen>
+    <dimen name="margin_xlarge_n">-32dp</dimen>
+
+    <dimen name="text_smaller">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular" >14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_regular_4x">22sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+
+
+    <!--app specific dimension-->
+    <dimen name="widthgoogle">30dp</dimen>
+    <dimen name="heightgoogle">30dp</dimen>
+    <dimen name="height_banner">200dp</dimen>
+    <dimen name="height_tab_layout">40dp</dimen>
+    <dimen name="width_movie_item">160dp</dimen>
+    <dimen name="width_search_location">20dp</dimen>
+    <dimen name="height_search_location">30dp</dimen>
+    <dimen name="width_location">60dp</dimen>
+    <dimen name="height_location">50dp</dimen>
+    <dimen name="width_search_bar">300dp</dimen>
+    <dimen name="height_search_bar">50dp</dimen>
+    <dimen name="width_location_logo">20dp</dimen>
+    <dimen name="height_video_view">200dp</dimen>
+    <dimen name="height_action_chip">48dp</dimen>
+    <dimen name="height_adventure_chip">48dp</dimen>
+    <dimen name="margin_start_rlmoviedetail">170dp</dimen>
+    <dimen name="height_drama_chip">48dp</dimen>
+    <dimen name="height_scifi_chip">48dp</dimen>
+    <dimen name="width_moviedetailposter">140dp</dimen>
+    <dimen name="height_moviedetailposter">193dp</dimen>
+    <dimen name="text_regular_2xx">18sp</dimen>
+    <dimen name="height_set_notification">35dp</dimen>
+    <dimen name="width_location_arrow">20dp</dimen>
+    <dimen name="height_location_arrow">20dp</dimen>
+    <dimen name="margin_start_orange">50dp</dimen>
+    <dimen name="width_dots">10dp</dimen>
+    <dimen name="height_dots">10dp</dimen>
+</resources>

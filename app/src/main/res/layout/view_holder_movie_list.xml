@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_movie_item"
+    android:layout_marginHorizontal="@dimen/margin_medium_2"
+
+    android:layout_height="250dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMovieImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/blackwidowposter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_movie_poster" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_above="@id/tvScreenType"
+        android:text="@string/lbl_movie_name_blackwidow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivImdb"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@id/tvMovieName"
+        app:srcCompat="@drawable/imdb" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="53dp"
+        android:text="7.1"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvScreenType"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="U/A"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/tvScreenType"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:srcCompat="@drawable/dot"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivDot"
+        android:text="2D, 3D, 3D IMAX"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
